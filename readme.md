@@ -70,17 +70,17 @@ obfuscate_file("input.py", "output.py", layers=3)
 " -----------------------------------------------------------------------
 # How It Works
 The obfuscator employs a three-stage process:
-1. **Variable Renaming**: Uses AST parsing to identify and rename local variables and function names to random strings
-2. **String Encoding**: Converts all string literals to Base64-encoded values with runtime decoding
-3. **Multi-layer Wrapping**: Wraps the entire obfuscated code in multiple layers of Base64 encoding
+1. Variable Renaming: Uses AST parsing to identify and rename local variables and function names to random strings
+2. String Encoding: Converts all string literals to Base64-encoded values with runtime decoding
+3. Multi-layer Wrapping: Wraps the entire obfuscated code in multiple layers of Base64 encoding
 
     Original Code → AST Parsing → Variable Renaming → String Encoding → Multi-layer Base64 → Output
 " -----------------------------------------------------------------------
 # Limitations
-- **Complex Code**: May not handle all Python language features
-- **Debugging Difficulty**: Obfuscated code is extremely difficult to debug
-- **Reverse Engineering**: Determined attackers can still reverse engineer the code
-- **Dependencies**: Requires `astor` library which may not be available in all environments
+- Complex Code: May not handle all Python language features
+- Debugging Difficulty: Obfuscated code is extremely difficult to debug
+- Reverse Engineering: Determined attackers can still reverse engineer the code
+- Dependencies: Requires `astor` library which may not be available in all environments
 
         # Performance Considerations
         - Obfuscation time increases with the number of layers
@@ -93,5 +93,5 @@ This tool is intended for legitimate use cases such as intellectual property pro
 
 v. While it makes code harder to read and understand, it does not provide cryptographic security.
 
-** This project is open source. **
+**This project is open source.**
 
