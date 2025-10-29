@@ -1,6 +1,6 @@
 # Python Code Obfuscator
 A powerful Python code obfuscation tool that provides multiple layers of protection for your source code through variable renaming, string encoding, and Base64 wrapping techniques.
-" -----------------------------------------------------------------------
+ -----------------------------------------------------------------------
 # Features
 - Multi-layer Base64 Encoding: Wrap your code in multiple layers of Base64 encoding for enhanced protection
 - Variable Name Randomization: Automatically rename local variables and function names to random strings
@@ -94,4 +94,5 @@ This tool is intended for legitimate use cases such as intellectual property pro
 v. While it makes code harder to read and understand, it does not provide cryptographic security.
 
 **This project is open source.**
+
 
